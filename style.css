@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(650px at right 800px);
+    background: #F2b634;
+    z-index: -1;
+}
+
+/*navbar*/
+
+#kobe-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7rem;
+    padding-top: 10px;
+}
+
+#kobe-header .kobe-header-img img{
+    max-width: 180px;
+    max-height: 80px;
+    margin-top: 3px;
+
+}
+
+#kobe-header .kobe-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    margin-left: 10px;
+
+}
+
+#kobe-header .kobe-navbar .kobe-navbar-logo{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+#kobe-header .kobe-navbar ul{
+    list-style: none;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+#kobe-header .kobe-navbar ul li{
+    float: left;
+    padding: 0 1rem;
+    
+}
+
+#kobe-header .kobe-navbar ul li a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 500;
+    position: relative;
+}
+
+#kobe-header .kobe-navbar ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #F2b634;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+#kobe-header .kobe-navbar ul li a:hover::after {
+    width: 100%;
+}
+
+/*Introduction page*/
+#kobe-main #kobe-introduction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 30px;
+    height: 100vh;
+
+}
+
+#kobe-main #kobe-introduction .kobe-introduction-detail h1{
+    font-size: 70px;
+    font-weight: 400;
+
+}
+
+#kobe-main #kobe-introduction .kobe-introduction-detail .shop-name{
+    font-size: 70px;
+    font-weight: 600;
+    color: blueviolet;
+
+}
+
+#kobe-main #kobe-introduction .kobe-introduction-detail p{
+    text-transform: none;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#kobe-main #kobe-introduction .kobe-introduction-detail .kobe-introduction-button{
+    margin-top: 40px;
+    
+
+}
+
+#kobe-main #kobe-introduction .kobe-introduction-detail .kobe-introduction-button a{
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    color: yellow;
+    background-color: blueviolet;
+    padding: 15px 15px;
+    border-radius: 40px;
+    transition: all 0.1s ease;
+
+}
+
+#kobe-main #kobe-introduction .kobe-introduction-detail .kobe-introduction-button a:hover{
+    padding: 17px 17px;
+    transform: scale(1.3);
+
+}
+
+#kobe-main #kobe-introduction .kobe-introduction-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 50px;
+    transition: all 0.2 ease;
+}
+
+#kobe-main #kobe-introduction .kobe-introduction-icon a:hover{
+    transform: scale(1.2);
+}
+
+/*About page*/
+#kobe-about{
+    padding: 10px;
+    height: 100vh;
+}
+
+#kobe-about .kobe-about-content{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 10px;
+    gap: 7rem;
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-detail .kobe-about-content-detail-text h2{
+    font-size: 60px;
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-detail .kobe-about-content-detail-text h1{
+    font-size: 80px;
+    color: #F2b634;
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-detail .kobe-about-content-detail-text p{
+    font-size: 30px;
+    text-transform: none;
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-detail .kobe-about-content-detail-media{
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-detail .kobe-about-content-detail-media .kobe-about-ig{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 10px;
+
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-detail .kobe-about-content-detail-media .kobe-about-ig i{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 40px;
+    color: #F2b634;
+    background-color: rgb(239, 239, 239);
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: all 0.3 ease;
+
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-detail .kobe-about-content-detail-media .kobe-about-ig i:hover{
+    transform: scale(1.1);
+    
+
+
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-detail .kobe-about-content-detail-media .kobe-about-ig a{
+    text-decoration: none;
+    font-size: 30px;
+    color: blueviolet;
+    text-transform: none;
+    font-weight: 500;
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-img{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#kobe-about .kobe-about-content .kobe-about-content-img img{
+    width: 800px;
+    height: 100%;
+}
+
+/*Product scroll page*/
+#kobe-main #kobe-scroll-container-shoe{
+    display: flex;
+    height: 500px;
+    padding: 10px 10px;
+    margin-top: 3rem;
+    
+}
+
+#kobe-main #kobe-scroll-container-shoe .kobe-scroll-box-shoe{
+    margin: 0 10px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 25px;
+    transition: all 0.3s;
+
+}
+
+#kobe-main #kobe-scroll-container-shoe .kobe-scroll-box-shoe:hover{
+    transform: scale(0.9);
+    border-radius: 25px;
+}
+
+#kobe-main #kobe-scroll-container-shoe .kobe-scroll-box-shoe .kobe-scroll-box-shoe-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kobe-main #kobe-scroll-container-shoe .kobe-scroll-box-shoe .kobe-scroll-box-shoe-img img{
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+#kobe-main #kobe-scroll-container-shoe .kobe-scroll-box-shoe .kobe-scroll-box-shoe-shoe-name{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+
+#kobe-main #kobe-scroll-container-shoe .kobe-scroll-box-shoe a{
+    color: inherit;
+    text-decoration: none; 
+
+}
+
+/*Product scroll jersey*/
+#kobe-main #kobe-scroll-container-jersey{
+    display: flex;
+    height: 500px;
+    padding: 10px 10px;
+    
+}
+
+#kobe-main #kobe-scroll-container-jersey .kobe-scroll-box-jersey{
+    width: 100%;
+    margin: 0 10px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 25px;
+    transition: all 0.3s;
+
+}
+
+#kobe-main #kobe-scroll-container-jersey .kobe-scroll-box-jersey:hover{
+    transform: scale(0.9);
+    border-radius: 25px;
+}
+
+#kobe-main #kobe-scroll-container-jersey .kobe-scroll-box-jersey .kobe-scroll-box-jersey-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kobe-main #kobe-scroll-container-jersey .kobe-scroll-box-jersey .kobe-scroll-box-jersey-img img{
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+#kobe-main #kobe-scroll-container-jersey .kobe-scroll-box-jersey .kobe-scroll-box-jersey-name{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+
+#kobe-main #kobe-scroll-container-jersey .kobe-scroll-box-jersey a{
+    color: inherit;
+    text-decoration: none; 
+
+}
+
+/*review page*/
+#kobe-main #kobe-review{
+    margin: 10px 10px;
+    
+}
+
+#kobe-main #kobe-review .kobe-review-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10px;
+
+}
+
+#kobe-main #kobe-review .kobe-review-container .kobe-review-box{
+    width: 500px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,1);
+    background-color: rgb(239, 239, 239);
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+
+#kobe-main #kobe-review .kobe-review-container .kobe-review-box .kobe-review-box-top .kobe-review-box-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#kobe-main #kobe-review .kobe-review-container .kobe-review-box .kobe-review-box-top .kobe-review-box-profile-1{
+    display: flex;
+    align-items: center;
+
+}
+
+#kobe-main #kobe-review .kobe-review-container .kobe-review-box .kobe-review-box-top .kobe-review-box-profile .kobe-review-box-profile-name{
+    padding: 5px;
+
+}
+
+#kobe-main #kobe-review .kobe-review-container .kobe-review-box .kobe-review-box-top .kobe-review-box-profile .kobe-review-box-profile-name strong{
+    font-size: 20px;
+
+}
+
+#kobe-main #kobe-review .kobe-review-container .kobe-review-box .kobe-review-box-top .kobe-review-box-profile-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#kobe-main #kobe-review .kobe-review-container .kobe-review-box .kobe-review-box-top .kobe-review-box-profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#kobe-main #kobe-review .kobe-review-container .kobe-review-box .kobe-review-box-rating{
+    font-size: 20px;
+    color: #F2b634;
+}
+
+/*Contact page*/
+#kobe-contact{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background: #F2b634; 
+}
+
+#kobe-contact .kobe-contact-info{
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+}
+
+#kobe-contact .kobe-contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+#kobe-contact .kobe-contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#kobe-contact .kobe-contact-form{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    text-align: center;
+    padding: 30px;
+}
+
+#kobe-contact .kobe-contact-form form{
+    margin-top: 30px;
+}
+
+#kobe-contact .kobe-contact-form .contact-form-txt{
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border: 1px solid;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+#kobe-contact .kobe-contact-form .contact-form-txtarea{
+    width: 100%;
+    height: 130px;
+    color: #000;
+    border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+#kobe-contact .kobe-contact-form .contact-form-btn{
+    width: 100%;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    border-radius: 50px;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.floater-text{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(239,239,239);
+    padding: 15px 15px;
+}
